@@ -1,0 +1,223 @@
+{
+  "idle": {
+    "lLeg": 24,
+    "lKnee": -5,
+    "rLeg": -24,
+    "rKnee": 5,
+    "lArm": 50,
+    "lElbow": -10,
+    "rArm": -50,
+    "rElbow": 10,
+    "yOffset": 0,
+    "bodyAngle": 0,
+    "headAngle": 0
+  },
+  "sit": {
+    "lLeg": -55,
+    "lKnee": 115,
+    "rLeg": -85,
+    "rKnee": 95,
+    "lArm": 35,
+    "lElbow": -15,
+    "rArm": -35,
+    "rElbow": 15,
+    "yOffset": 11,
+    "expression": "neutral"
+  },
+  "lieBack": {
+    "lLeg": 3,
+    "lKnee": 0,
+    "rLeg": -3,
+    "rKnee": 12,
+    "lArm": 15,
+    "lElbow": -5,
+    "rArm": -15,
+    "rElbow": 5,
+    "bodyAngle": -85,
+    "headAngle": 85,
+    "yOffset": 18,
+    "expression": "sleepy"
+  },
+  "lieStomach": {
+    "speed": 0.12,
+    "expression": "happy",
+    "frames": [
+      {
+        "lLeg": 15,
+        "lKnee": 80,
+        "rLeg": 12,
+        "rKnee": 10,
+        "lArm": -70,
+        "lElbow": -85,
+        "rArm": -75,
+        "rElbow": -90,
+        "bodyAngle": 75,
+        "headAngle": -70,
+        "yOffset": 18
+      },
+      {
+        "lLeg": 15,
+        "lKnee": 10,
+        "rLeg": 12,
+        "rKnee": 80,
+        "lArm": -70,
+        "lElbow": -85,
+        "rArm": -75,
+        "rElbow": -90,
+        "bodyAngle": 75,
+        "headAngle": -70,
+        "yOffset": 18
+      }
+    ]
+  },
+  "wave": {
+    "speed": 0.14,
+    "bob": 0,
+    "expression": "happy",
+    "frames": [
+      {
+        "lLeg": 20,
+        "lKnee": -4,
+        "rLeg": -20,
+        "rKnee": 4,
+        "lArm": 132,
+        "lElbow": -12,
+        "rArm": -45,
+        "rElbow": 10
+      },
+      {
+        "lLeg": 20,
+        "lKnee": -4,
+        "rLeg": -20,
+        "rKnee": 4,
+        "lArm": 162,
+        "lElbow": -42,
+        "rArm": -45,
+        "rElbow": 10
+      }
+    ]
+  },
+  "cheer": {
+    "speed": 0.16,
+    "bob": 1.2,
+    "expression": "happy",
+    "frames": [
+      {
+        "lLeg": 26,
+        "lKnee": -8,
+        "rLeg": -26,
+        "rKnee": 8,
+        "lArm": 145,
+        "lElbow": -15,
+        "rArm": -145,
+        "rElbow": 15
+      },
+      {
+        "lLeg": 32,
+        "lKnee": -18,
+        "rLeg": -32,
+        "rKnee": 18,
+        "lArm": 168,
+        "lElbow": -35,
+        "rArm": -168,
+        "rElbow": 35
+      }
+    ]
+  },
+  "stretch": {
+    "speed": 0.05,
+    "expression": "happy",
+    "frames": [
+      {
+        "lLeg": 18,
+        "lKnee": -3,
+        "rLeg": -18,
+        "rKnee": 3,
+        "lArm": 125,
+        "lElbow": -8,
+        "rArm": -125,
+        "rElbow": 8,
+        "bodyAngle": 0
+      },
+      {
+        "lLeg": 18,
+        "lKnee": -3,
+        "rLeg": -18,
+        "rKnee": 3,
+        "lArm": 140,
+        "lElbow": -4,
+        "rArm": -140,
+        "rElbow": 4,
+        "bodyAngle": -6
+      }
+    ]
+  },
+  "lookAround": {
+    "speed": 0.025,
+    "frames": [
+      {
+        "bodyAngle": -5
+      },
+      {
+        "bodyAngle": 5
+      },
+      {
+        "bodyAngle": 0
+      }
+    ]
+  },
+  "dance": {
+    "speed": 0.06,
+    "expression": "happy",
+    "frames": [
+      {
+        "lLeg": 28,
+        "lKnee": 20,
+        "rLeg": -20,
+        "rKnee": 5,
+        "lArm": 125,
+        "lElbow": -30,
+        "rArm": -60,
+        "rElbow": 10,
+        "bodyAngle": -8,
+        "yOffset": 2
+      },
+      {
+        "lLeg": 24,
+        "lKnee": -5,
+        "rLeg": -24,
+        "rKnee": 5,
+        "lArm": 60,
+        "lElbow": -15,
+        "rArm": -60,
+        "rElbow": 15,
+        "bodyAngle": 0,
+        "yOffset": 0
+      },
+      {
+        "lLeg": 20,
+        "lKnee": 5,
+        "rLeg": -28,
+        "rKnee": 20,
+        "lArm": 60,
+        "lElbow": -10,
+        "rArm": -125,
+        "rElbow": 30,
+        "bodyAngle": 8,
+        "yOffset": 2
+      },
+      {
+        "lLeg": 24,
+        "lKnee": -5,
+        "rLeg": -24,
+        "rKnee": 5,
+        "lArm": 60,
+        "lElbow": -15,
+        "rArm": -60,
+        "rElbow": 15,
+        "bodyAngle": 0,
+        "yOffset": 0
+      }
+    ]
+  }
+}

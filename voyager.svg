@@ -1,0 +1,101 @@
+<svg id="pv-character" data-eye-l="normal" data-eye-r="normal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 100">
+  <defs>
+    <!-- eye color -->
+    <linearGradient id="eye-grad" gradientUnits="userSpaceOnUse" x1="0" y1="-2.8" x2="0" y2="4.0">
+      <stop offset="0%" stop-color="var(--pv-eye-top, #b0b0ca)" />
+      <stop offset="75%" stop-color="var(--pv-eye-top, #b0b0ca)" />
+      <stop offset="75%" stop-color="var(--pv-eye-bottom, #d3ac3e)" />
+      <stop offset="100%" stop-color="var(--pv-eye-bottom, #d3ac3e)" />
+    </linearGradient>
+
+    <!-- arm and leg segments -->
+    <line id="tpl-arm-seg" x1="0" y1="0" x2="0" y2="6.5" stroke="var(--pv-body, #191930)" stroke-width="6.5" stroke-linecap="round" />
+    <line id="tpl-leg-seg" x1="0" y1="0" x2="0" y2="7.5" stroke="var(--pv-body, #191930)" stroke-width="6.5" stroke-linecap="round" />
+
+    <!-- six spoke star -->
+    <g id="tpl-star" transform="rotate(0)" stroke="var(--pv-star, #d3ac3e)" stroke-width="2.1" stroke-linecap="round">
+      <line x1="0" y1="-3.4" x2="0" y2="3.4" />
+      <line x1="-2.94" y1="-1.7" x2="2.94" y2="1.7" />
+      <line x1="-2.94" y1="1.7" x2="2.94" y2="-1.7" />
+    </g>
+  </defs>
+
+  <!-- rig -->
+  <g id="vrig" transform="translate(15, 19)">
+
+    <!-- cubic bezier for the tail root @ (31, 38) tip @ (11, 33) -->
+    <g id="tail-group">
+      <path id="tail-path"
+        d="M 31,38 C 23,43 14,40 11,33"
+        fill="none"
+        stroke="var(--pv-tail, #00678f)"
+        stroke-width="2.3"
+        stroke-linecap="round" />
+
+      <!-- star position at tail tip -->
+      <g id="tail-star" transform="translate(11, 33)">
+        <use id="tail-star-spin" href="#tpl-star" />
+      </g>
+    </g>
+
+    <!-- left arm (back) -->
+    <g id="arm-l-upper" transform="translate(29.2, 21) rotate(50)">
+      <use href="#tpl-arm-seg" />
+      <g id="arm-l-lower" transform="translate(0, 7.25)">
+        <use href="#tpl-arm-seg" />
+      </g>
+    </g>
+
+    <!-- left leg (back) -->
+    <g id="leg-l-upper" transform="translate(29.4, 38) rotate(24)">
+      <use href="#tpl-leg-seg" />
+      <g id="leg-l-lower" transform="translate(0, 7.5)">
+        <use href="#tpl-leg-seg" />
+      </g>
+    </g>
+
+    <!-- body -->
+    <g id="body-group">
+      <!-- torso -->
+      <line id="torso" x1="30" y1="20" x2="30" y2="38" stroke="var(--pv-body, #191930)" stroke-width="7" stroke-linecap="round" />
+    </g>
+
+    <!-- right leg (front) -->
+    <g id="leg-r-upper" transform="translate(30.6, 38) rotate(-24)">
+      <use href="#tpl-leg-seg" />
+      <g id="leg-r-lower" transform="translate(0, 7.5)">
+        <use href="#tpl-leg-seg" />
+      </g>
+    </g>
+
+    <!-- right arm (front) -->
+    <g id="arm-r-upper" transform="translate(30.8, 21) rotate(-50)">
+      <use href="#tpl-arm-seg" />
+      <g id="arm-r-lower" transform="translate(0, 7.25)">
+        <use href="#tpl-arm-seg" />
+      </g>
+    </g>
+
+    <!-- head -->
+    <g id="head-group" transform="translate(30, 12.5)">
+      <circle id="head" cx="0" cy="0" r="10" fill="var(--pv-body, #191930)" />
+      <g id="eyes" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+        <path id="eye-l" d="M -3.3,-1.5 L -3.3,0.6 L -3.3,2.7" stroke="url(#eye-grad)" />
+        <path id="eye-r" d="M 3.6,-1.5 L 3.6,0.6 L 3.6,2.7" stroke="url(#eye-grad)" />
+      </g>
+    </g>
+  </g>
+
+  <!-- debug overlays -->
+  <g id="debug-layer" display="none">
+    <rect x="1" y="1" width="108" height="98" fill="none" stroke="#ff0055" stroke-dasharray="3,3" />
+    <text id="debug-label" x="4" y="94" font-family="monospace" font-size="7" fill="#ff0055">INIT</text>
+  </g>
+  <g id="debug-pivots" display="none">
+    <circle cx="44.2" cy="40" r="1.3" fill="#00ff00" />
+    <circle cx="45.8" cy="40" r="1.3" fill="#00ff00" />
+    <circle cx="44.4" cy="57" r="1.3" fill="#00ff00" />
+    <circle cx="45.6" cy="57" r="1.3" fill="#00ff00" />
+    <circle cx="46.0" cy="57" r="1.3" fill="#00ffff" />
+  </g>
+</svg>
