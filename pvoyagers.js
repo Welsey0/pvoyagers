@@ -3,7 +3,7 @@ import { Animator, EXPRESSIONS, EYE_SHAPES, POSES } from './pvanimation.js';
 import { Behavior, activeVoyagers } from './pvbehavior.js';
 
 const DEBUG = false;
-const SVG_PATH = new URL('./voyager.svg', import.meta.url).href;
+const SVG_PATH = 'https://welsey0.github.io/voyager.svg'; // this unfortunately seems to require a hardcode for the bookmarklet, feel free to change this if using code on your own
 
 const COLOR_SCHEMES = {
   whisper: { body: '#191930', eyeTop: '#b0b0ca', eyeBottom: '#d3ac3e', tail: '#00678f', star: '#d3ac3e' },
