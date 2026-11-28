@@ -1,6 +1,9 @@
 # Pocket Voyagers!
 Summon voyagers around your screen.
 
+## Bookmarklet
+Use Pocket Voyagers as a bookmarklet! Save the contents of `bookmarklet.js` as a bookmark and then you can summon voyagers on most web pages! Commands are also then accessible from the console. Customize your bookmarklet to change what it does by when you click it. By default, it runs `summonVoyagers(1)` which will summon a random preset voyager.
+
 ## Setup
 pvoyagers.js uses ES stuff so it needs to be imported as a module (it won't work if you just open index.html). You can set up a simple server for testing by just running `python -m http.server` in the repo root and going to localhost:8000.
 

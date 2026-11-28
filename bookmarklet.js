@@ -1,0 +1,1 @@
+javascript:import('https://welsey0.github.io/pvoyagers/pvoyagers.js').then(m=>m.summonVoyagers(1));
